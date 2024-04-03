@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{ variables: { colorPrimary: "#624CF5" } }}>
       <html lang="en">
         <body className={karla.className}>{children}</body>
       </html>
